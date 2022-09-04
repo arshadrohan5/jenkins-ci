@@ -1,2 +1,6 @@
-#!/bin/bash
-echo "Hello World !\n"
+node {
+    stage(' *** Compilation Phase *** ') {
+      gcc -g helloworld.c
+    }
+}
+

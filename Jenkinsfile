@@ -1,19 +1,8 @@
 node {
-    def mvnHome
-    stage('Preparation') { // for display purposes
-        // Get some code from a GitHub repository
+    stage('*** Compilation Phase ***') { // for display purposes
+        // Run a bash script using the code below
         sh '''#!/bin/bash
-                 echo "hello world" 
+                 gcc -g ./helloworld.c 
          '''
-        // Get the Maven tool.
-        // ** NOTE: This 'M3' Maven tool must be configured
-        // **       in the global configuration.
-//         mvnHome = tool 'M3'
     }
 }
-// node {
-//     stage(' *** Installing GCC in Jenkins ***') {
-//         gcc -g ./helloworld.c
-// //       echo "HELLO WORLD !\n"
-//     }
-// }

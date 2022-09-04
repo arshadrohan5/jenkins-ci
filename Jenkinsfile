@@ -4,7 +4,7 @@ node {
         git 'https://github.com/alitariq4589/hello_world_jenkins.git'
         // Run a bash script using the code below
         sh '''#!/bin/bash
-                 gcc -g helloworld.c 
+                 pwd
          '''
     }
 }

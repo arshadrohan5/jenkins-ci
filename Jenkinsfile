@@ -5,7 +5,6 @@ node {
         sh '''#!/bin/bash
             gcc -g ./helloworld.c -o helloworld.out
             riscv64-unknown-elf-gcc ./helloworld.c -o helloworld_riscv_compiled.out
-            riscv
          '''
     }
     stage (' *** Running Binaries ***'){

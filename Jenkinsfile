@@ -1,9 +1,14 @@
 node {
-    checkout scm
+    checkout scm //Getting content of this repo
     stage('*** Compilation Phase ***') { // for display purposes
-        //First get the repo from internet
+        //Compiling helloworld.c using bash commands
         sh '''#!/bin/bash
-            ls -la
+            gcc -g ./helloworld.c -o helloworld.out
+         '''
+    }
+    stage (' *** Running Binaries ***'){
+        sh '''#!/bin/bash
+            ./helloworld.out
          '''
     }
 }

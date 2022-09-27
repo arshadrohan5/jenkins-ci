@@ -13,7 +13,7 @@ pipeline {
                         gcc -g ./helloworld.c -o helloworld,out
                     '''
                     sh '''#!/bin/bash
-                        ricv64-unknown-elf-gcc ./helloworld.c -o helloworld_riscv_compiled.out
+                        riscv64-unknown-elf-gcc ./helloworld.c -o helloworld_riscv_compiled.out
                     '''
             }
         }

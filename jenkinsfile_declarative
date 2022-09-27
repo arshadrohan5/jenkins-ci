@@ -20,7 +20,7 @@ pipeline {
         stage ('Running Binaries'){
             steps {
                     sh ''' #!/bin/bash
-                        ./helloworld
+                        ./helloworld.out
                     '''
                     sh'''#!/bin/bash
                         spike $(which pk) helloworld_riscv_compiled.out

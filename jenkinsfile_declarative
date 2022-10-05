@@ -1,5 +1,5 @@
 pipeline {
-    agent {label "runner1"}
+    agent {label "Runner1"}
 
     stages {
         stage('Clone Repository') {

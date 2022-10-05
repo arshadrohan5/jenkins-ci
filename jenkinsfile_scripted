@@ -1,4 +1,4 @@
-node('workstation_node') {
+node{
     checkout scm //Getting content of this repo
     stage('*** Compilation Phase ***') { // for display purposes
         //Compiling helloworld.c using bash commands

@@ -3,6 +3,7 @@ node{
     stage('*** Compilation Phase ***') { // for display purposes
         //Compiling helloworld.c using bash commands
         sh '''#!/bin/bash
+            exec $SHELL
             gcc -g ./helloworld.c -o helloworld.out
             riscv64-unknown-elf-gcc ./helloworld.c -o helloworld_riscv_compiled.out
          '''
